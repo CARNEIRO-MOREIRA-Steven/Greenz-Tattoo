@@ -1,0 +1,176 @@
+.contact_homepage{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contact_homepage_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_container_title{
+    height: 30%;
+}
+
+.contact_title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 5%;
+}
+
+.contact_homepage span{
+    width: 20%;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.contact_title, .contact_subtitle {
+    width: auto;
+}
+
+.contact_informations_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.contact_informations_content{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact_informations_content h2{
+    text-align: end;
+}
+
+.contact_form_content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_form{
+    width: 100%;
+}
+
+.form_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_content div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form_content label{
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.form_content input{
+    height: 40px;
+    background: #000000;
+    border: solid 2px #ffffff;
+    padding: 5px;
+}
+
+.form_content textarea{
+    height: 120px;
+    background: #000000;
+    border: solid 2px #ffffff;
+    padding: 5px;
+}
+
+.form_button{
+    height: 50px;
+    width: 200px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .contact_homepage span{
+        width: 15%;
+    }
+
+    .contact_subtitle{
+        text-align: center;
+    }
+
+    .contact_informations_content{
+        width: 40%;
+    }
+
+    .contact_form_content{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact_title, .contact_subtitle{
+        text-align: center;
+    }
+    .contact_title{
+        gap: 2%;
+    }
+    .contact_subtitle{
+        font-size: 22px;
+    }
+    .contact_homepage span{
+        width: 10%;
+    }
+    .contact_informations_container{
+        flex-direction: column;
+        width: 90%;
+        gap: 5px;
+        height: 80%;
+    }
+    .contact_informations_content, .contact_form_content{
+        width: 100%;
+        gap: 0;
+    }
+    .contact_informations_content{
+        height: 30%;
+    }
+    .contact_informations_content h2{
+        font-size: 17px;
+    }
+    .contact_container_title{
+        height: 18%;
+    }
+    .form_content label{
+        font-size: 17px;
+    }
+    .form_content textarea{
+        height: 100px;
+    }
+    .contact_homepage{
+        height: 110vh;
+    }
+  }
