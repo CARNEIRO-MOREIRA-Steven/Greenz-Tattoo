@@ -76,7 +76,7 @@ const ContactForm= () => {
         <section className='contact_container_title'>
         <aside className='contact_title'>
           <span></span>
-            <h3 className='contact_title'>Vous etes décidé ?</h3>
+            <h3 className='contact_title'>Vous êtes décidé ?</h3>
           <span></span>
           </aside>
           <h2 className='contact_subtitle'>Réserver votre prochain tatouage dès maintenant</h2>

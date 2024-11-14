@@ -40,7 +40,7 @@ const IntroTatoueuse = () => {
           </aside>
     </section>
     <section className='intro_salon'>
-    <section className='intro_tatoueuse_content_title'>
+    <section className='intro_salon_content_title'>
         <aside className='design_title'><span></span><h2 className='intro_salon_title'>GREENZ INK TATTOO, C’EST</h2><span></span></aside>
         <h3 className='intro_salon_subtitle'>Un salon de tatouage unique</h3>
         <h3 className='intro_salon_subtitle'>Au coeur de chauny</h3>

@@ -252,14 +252,16 @@
         flex-direction: column;
         height: 65%;
     }
-    .intro_tatoueuse_content, .dernier_projet_image{
+    .dernier_projet_image{
         width: 90%;
-        height: 50%;
+        height: 60%;
     }
     .intro_tatoueuse_content{
         justify-content: center;
         border-right: none;
         flex-direction: row-reverse;
+        height: 40%;
+        width: 100%;
     }
     .logo_bottom_container{
         height: 15%;
@@ -268,14 +270,23 @@
         width: 15%;
     }
     .intro_tatoueuse_content_title{
-        height: 30%;
+        height: 15%;
+    }
+    .intro_salon_content_title{
+        height: 20%;
     }
     .section_last_tattoo{
         height: 200px;
         gap: 5%;
     }
+    .dernier_projet_image{
+        gap: 0;
+    }
+    .first_tattoo, .aside_2_tatoo{
+        width: 30%;
+    }
     .tattoo5, .tattoo3{
-        top: 10px;
+        top: 15px;
     }
     .photo_tatoueuse{
         width: 30%;
@@ -283,10 +294,15 @@
     .intro_tatoueuse_description{
         font-size: 17px;
     }
+    .intro_tatoueuse{
+        justify-content: space-evenly;
+    }
     .intro_salon{
         background-size: 390%;
     }
-
+    .intro_realisation_title{
+        font-size: 25px;
+    }
     .intro_salon_container{
         flex-direction: column;
         gap: 20px;
