@@ -3,6 +3,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: #000000;
 }
 .logo_reseau{
     height: 50px;
