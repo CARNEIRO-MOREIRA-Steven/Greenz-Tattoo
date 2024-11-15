@@ -41,11 +41,11 @@ const Header = () => {
     <header>
       <nav className="desktop-nav">
         <Link href='/' className={activePath === '/' ? 'active' : ''}>Greenz Ink Tattoo</Link>
-        <Link href='/a_propos' className={activePath === '/a_propos' ? 'active' : ''}>Tatoueuse</Link>
+        <Link href='#tatoueuse' className={activePath === '#tatoueuse' ? 'active' : ''}>Tatoueuse</Link>
         <img className="logo-header" src="./logo.png" alt="Logo" />
-        <Link href='/services' className={activePath === '/services' ? 'active' : ''}>Soins Tatouage</Link>
-        <Link href='/temoignages' className={activePath === '/temoignages' ? 'active' : ''}>FAQ</Link>
-        <Link href='/contact' className={activePath === '/contact' ? 'active' : ''}>Contact</Link>
+        <Link href='/soins' className={activePath === '/soins' ? 'active' : ''}>Soins Tatouage</Link>
+        {/* <Link href='/faq' className={activePath === '/faq' ? 'active' : ''}>FAQ</Link> */}
+        <Link href='#contact' className={activePath === '#contact' ? 'active' : ''}>Contact</Link>
       </nav>
       <div className="mobile-menu">
       <img className="logo-header" src="./logo.png" alt="Logo" />
@@ -56,11 +56,11 @@ const Header = () => {
           <span></span>
           <ul id="menu" className={isMenuOpen ? 'open' : ''}>
             <li><Link href='/' className={activePath === '/' ? 'active' : ''}>Greenz Ink Tattoo</Link></li>
-            <li><Link href='/tatoueuse' className={activePath === '/a_propos' ? 'active' : ''}>Tatoueuse</Link></li>
-            <li><Link href='/soins' className={activePath === '/services' ? 'active' : ''}>Soins Tatouage</Link></li>
+            <li><Link href='#tatoueuse' className={activePath === '#tatoueuse' ? 'active' : ''}>Tatoueuse</Link></li>
+            <li><Link href='/soins' className={activePath === '/soins' ? 'active' : ''}>Soins Tatouage</Link></li>
             {/* <li><Link href='/projets' className={activePath === '/projets' ? 'active' : ''}>Projets</Link></li> */}
-            <li><Link href='/faq' className={activePath === '/temoignages' ? 'active' : ''}>FAQ</Link></li>
-            <li><Link href='/contact' className={activePath === '/contact' ? 'active' : ''}>Contact</Link></li>
+            {/* <li><Link href='/faq' className={activePath === '/faq' ? 'active' : ''}>FAQ</Link></li> */}
+            <li><Link href='#contact' className={activePath === '#contact' ? 'active' : ''}>Contact</Link></li>
           </ul>
         </div>
       </div>

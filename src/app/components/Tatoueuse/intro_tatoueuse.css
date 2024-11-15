@@ -29,17 +29,18 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 5%;
+    gap: 3%;
 }
 
 .intro_tatoueuse span{
-    width: 30%;
+    width: 20%;
     height: 3px;
     background-color: #ffffff;
 }
 
 .intro_tatoueuse_title, .intro_tatoueuse_subtitle {
     width: auto;
+    padding: 25px 0;
 }
 
 .intro{
@@ -65,6 +66,7 @@
     align-items: center;
     gap: 5%;
     border-right: solid #ffffff 2px;
+    overflow-x: hidden;
 }
 
 .photo_tatoueuse{
@@ -90,6 +92,8 @@
 
 .intro_realisation_title{
     text-align: center;
+    font-size: 35px;
+    width: 400px;
 }
 
 .dernier_projet_image{
@@ -100,6 +104,7 @@
     align-items: center;
     width: 50%;
     height: 100%;
+    overflow: hidden;
 }
 
 .section_last_tattoo{
@@ -192,12 +197,19 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.473);
+    text-align: center;
+    overflow: hidden;
 }
 
 .intro_salon_content h2{
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 25px;
+}
+
+.intro_salon_subtitle{
+    padding: 25px 0;
+    text-align: center;
 }
 
 .intro_salon_content p {
@@ -213,6 +225,7 @@
 
     .intro_realisation_title{
         font-size: 30px;
+        width: 300px;
     }
 
     .intro_tatoueuse_description{
@@ -236,7 +249,7 @@
 
     .intro_salon_content{
         width: 320px;
-        height: 400px;
+        height: 320px;
     }
     .intro_salon_container{
         gap: 50px;
@@ -270,10 +283,10 @@
         width: 15%;
     }
     .intro_tatoueuse_content_title{
-        height: 15%;
+        height: 20%;
     }
     .intro_salon_content_title{
-        height: 20%;
+        height: 30%;
     }
     .section_last_tattoo{
         height: 200px;
@@ -302,13 +315,14 @@
     }
     .intro_realisation_title{
         font-size: 25px;
+        width: 200px;
     }
     .intro_salon_container{
         flex-direction: column;
         gap: 20px;
     }
     .intro_salon_content{
-        height: 100%;
+        height: auto;
         width: 90%;
     }
     .intro_salon_content h2{
@@ -327,6 +341,7 @@
     }
     .intro_salon_subtitle{
         text-align: center;
+        padding: 15px 0;
     }
     .intro_salon p {
         width: 100%;

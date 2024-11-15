@@ -71,7 +71,7 @@ const ContactForm= () => {
 
   
   return (
-    <section className='contact_homepage'>
+    <section className='contact_homepage' id='contact'>
       <section className='contact_homepage_container'>
         <section className='contact_container_title'>
         <aside className='contact_title'>
