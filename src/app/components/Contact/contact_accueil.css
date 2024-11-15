@@ -103,6 +103,7 @@
     background: #000000;
     border: solid 2px #ffffff;
     padding: 5px;
+    color: #ffffff;
 }
 
 .form_content textarea{
@@ -110,6 +111,7 @@
     background: #000000;
     border: solid 2px #ffffff;
     padding: 5px;
+    color: #ffffff;
 }
 
 .form_button{
@@ -187,7 +189,7 @@
         height: 100px;
     }
     .contact_homepage{
-        height: 115vh;
+        height: 120vh;
     }
     .form_content input{
         height: 35px;

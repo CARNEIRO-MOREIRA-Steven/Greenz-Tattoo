@@ -2,8 +2,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Mon Application',
-  description: 'Description de mon app',
+  title: 'Greenz Ink Tattoo',
+  description: "Découvrez l'univers du tattouage avec Greenz Ink Tattoo" ,
 };
 
 

@@ -52,45 +52,48 @@ const IntroSalon = () => {
           transition : {duration : 0.5}
         });
         await firstAside.start({
-          scale : 1
+          scale : 1,
+          transition : {duration : 0.4}
         });
         await firstAsideTittle.start({
           opacity : 1 ,
-          transition : {duration : 0.5}
+          transition : {duration : 0.7 , delay : 0.2}
         });
         await firstAsideSubtittle.start({
           scale : 1,
           opacity :1 ,
-          transition : {duration : 0.4}
+          transition : {duration : 0.7 , delay : 0.2}
         });
         await firstAsideDescription.start({
           opacity : 1,
           x : 0,
-          transition : {duration : 0.6}
+          transition : {duration : 0.7, delay : 0.2}
         });
         await firstAsideSubDescription.start({
-          opacity : 1
+          opacity : 1,
+          transition : {duration : 0.7 , delay : 0.2}
         });
         await secondAside.start({
           scale : 1,
-          transition : {delay : 0.5}
+          transition : {delay : 0.35, duration : 0.4}
         });
         await secondAsideTittle.start({
           opacity : 1 ,
-          transition : {duration : 0.5}
+          transition : {duration : 0.7 , delay : 0.2}
         });
         await secondAsideSubtittle.start({
           scale : 1,
           opacity :1 ,
-          transition : {duration : 0.4}
+          transition : {duration : 0.7 , delay : 0.2}
         });
         await secondAsideDescription.start({
           opacity : 1,
           x : 0,
-          transition : {duration : 0.6}
+          transition : {duration : 0.7 , delay : 0.2}
         });
         await secondAsideSubDescription.start({
-          opacity : 1
+          opacity : 1,
+          transition : {duration : 0.7 , delay : 0.2}
         });
       }
     };

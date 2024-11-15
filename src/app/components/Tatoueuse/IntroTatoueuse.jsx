@@ -41,28 +41,32 @@ const IntroTatoueuse = () => {
   useEffect(() => {
     const animateTatoueuse = async () => {
       if (TatoueuseVisible) {
-        await spanTitle.start({
-          y : 0,
-          transition: { duration: 0.5 }
-        })
         await titleTatoueuse.start({
           opacity: 1,
           transition: { duration: 0.7 }
         });
+        await spanTitle.start({
+          y : 0,
+          transition: { duration: 0.5 }
+        });
         await subtitleTatoueuse.start({
           opacity: 1,
-          transition: { duration: 1 }
+          transition: { duration: 0.7 }
         });
         await photoProfil.start({
-          scale : 1.1
+          scale : 1.1,
+          transition: { delay: 0.2, duration : 0.4 }
+
         });
         await firstTatoueuseDescription.start({
           x : 0,
-          opacity : 1
+          opacity : 1,
+          transition: { duration: 0.5}
         });
         await secondTatoueuseDescription.start({
           x : 0,
-          opacity : 1
+          opacity : 1,
+          transition: { duration: 0.5}
         });
         
         await photoProfil.start({
@@ -73,23 +77,28 @@ const IntroTatoueuse = () => {
         });
         await firstTattoo.start({
           y : 0,
-          opacity : 1
+          opacity : 1,
+          transition: { duration: 0.75}
         });
         await secondTattoo.start({
           x : 0,
-          opacity :1
+          opacity :1,
+          transition: { duration: 0.75}
         });
         await thirdTattoo.start({
           y : 0,
-          opacity :1
+          opacity :1,
+          transition: { duration: 0.75}
         });
         await fourthTattoo.start({
           x :0,
-          opacity :1
+          opacity :1,
+          transition: { duration: 0.75}
         });
         await fifthTattoo.start({
           y :0,
-          opacity :1
+          opacity :1,
+          transition: { duration: 0.75}
         });
         await firstTattoo.start({
           scale : 1,
@@ -147,11 +156,13 @@ const IntroTatoueuse = () => {
               <img className='first_tattoo' src="./tattoo_eclair.png" alt="Tattoo 1" />
               <aside className='aside_2_tatoo'>
                 <motion.img animate={secondTattoo} initial={{x :-50, opacity :0}} className='tattoo2' src="./tattoo2.png" alt="Tattoo 2" />
-                <motion.img animate={thirdTattoo} initial={{opacity :0, y : -100}} className='tattoo3' src="./tattoo3.png" alt="Tattoo 3" />
+                <div className='tattoo_overflow'>
+                <motion.img animate={thirdTattoo} initial={{opacity :0, y : -100}} className='tattoo3' src="./tattoo3.png" alt="Tattoo 3" /></div>
               </aside>
               <aside className='aside_2_tatoo'>
                 <motion.img animate={fourthTattoo} initial={{opacity :0, x : -100}} className='tattoo4' src="./tattoo5.png" alt="Tattoo 4" />
-                <motion.img animate={fifthTattoo} initial={{opacity :0, y : -100}} className='tattoo5' src="./tattoo4.png" alt="Tattoo 5" />
+                <div className='tattoo_overflow'>
+                <motion.img animate={fifthTattoo} initial={{opacity :0, y : -100}} className='tattoo5' src="./tattoo4.png" alt="Tattoo 5" /></div>
               </aside>
             </motion.aside>
           </section>

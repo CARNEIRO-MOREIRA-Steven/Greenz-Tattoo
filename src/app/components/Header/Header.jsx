@@ -58,7 +58,9 @@ const Header = () => {
         <Link href='/#contact' className={activePath === '#contact' ? 'active' : ''}onClick={closeMenu}>Contact</Link>
       </nav>
       <div className="mobile-menu">
-      <img className="logo-header" src="./logo.png" alt="Logo" />
+      <Link className='logo_link_header' href="/">
+        <img className="logo-header" src="./logo.png" alt="Logo"/>
+        </Link>
         <div id="menuToggle">
           <input type="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
           <span></span>

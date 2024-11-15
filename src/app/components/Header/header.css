@@ -166,6 +166,11 @@ header {
       width: 100%;
       justify-content: space-around;
     }
+
+    #menuToggle{
+      position: absolute;
+      right: 50px;
+    }
   
     header {
       flex-direction: row-reverse;
@@ -175,5 +180,11 @@ header {
     .logo-header{
       height: 150px;
       width: 150px;
+    }
+
+    .logo_link_header{
+      z-index: 5;
+      position: absolute;
+      left: 30px;
     }
   }
