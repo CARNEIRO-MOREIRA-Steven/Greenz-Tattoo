@@ -29,24 +29,21 @@
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 55%;
+    top: 60%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
   }
   
   @media screen and (max-width: 767px) {
     .banner h1{
-        top: 40%;
+        top: 45%;
     }
 
     .banner h2{
-        top: 60%;
+        top: 55%;
     }
-  }
-
-  @media screen and (max-width: 767px) {
     .banner_image{
         background-size: 150%;
     }

@@ -1,6 +1,7 @@
 "use client"
-import React, {useState} from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 import './contact_accueil.css'
+import { motion, useAnimation } from 'framer-motion';
 
 
 
@@ -69,9 +70,54 @@ const ContactForm= () => {
       }
     };
 
+    const [contactVisible, contactIsVisible] = useState(false);
+    const contactTitle = useAnimation();
+    const contactFirstInformation = useAnimation();
+    const contactSecondInformation = useAnimation();
+    const contactRef = useRef(null);
+
+    useEffect(() => {
+      const contactTopOffset = contactRef.current.offsetTop ;
+      
+      const handleScroll = () =>{
+        if ( window.scrollY > contactTopOffset - window.innerHeight / 1.5) {
+          contactIsVisible(true);
+        } else {
+          contactIsVisible (false);
+        }
+      }
+        window.addEventListener ('scroll', handleScroll);
+
+        return () => {
+          window.removeEventListener ('scroll' , handleScroll)
+        };
+    }, []);
+
+    useEffect(() => {
+      const animateContact = async () => {
+        if (contactVisible){
+          await contactTitle.start({
+            opacity : 1,
+            scale : 1,
+            transition : {duration : 0.7}
+          });
+          await contactFirstInformation.start({
+            opacity : 1,
+            x : 0, 
+            transition : {duration : 1}
+          });
+          await contactSecondInformation.start({
+            opacity : 1,
+            y : 0,
+            transition : {duration : 0.8}
+          })
+        }
+      };
+      animateContact();
+    }, [contactVisible])
   
   return (
-    <section className='contact_homepage' id='contact'>
+    <section className='contact_homepage' id='contact' ref={contactRef}>
       <section className='contact_homepage_container'>
         <section className='contact_container_title'>
         <aside className='contact_title'>
@@ -79,12 +125,12 @@ const ContactForm= () => {
             <h3 className='contact_title'>Vous êtes décidé ?</h3>
           <span></span>
           </aside>
-          <h2 className='contact_subtitle'>Réserver votre prochain tatouage dès maintenant</h2>
+          <motion.h2 animate={contactTitle} initial={{opacity : 0, scale : 0}} className='contact_subtitle'>Réserver votre prochain tatouage dès maintenant</motion.h2>
         </section>
       <section className='contact_informations_container'>
       <section className='contact_informations_content'>
-        <h2>Prendre rendez-vous au tattoo shop du lundi au vendredi de 9h à 11h et de 15h à 17h</h2>
-        <h2>contactez-nous pour plus d’informations sur les tatouages ou autre ! </h2>
+        <motion.h2 animate={contactFirstInformation} initial={{x : 350, opacity : 0}}>Prendre rendez-vous au tattoo shop du lundi au vendredi de 9h à 11h et de 15h à 17h</motion.h2>
+        <motion.h2 animate={contactSecondInformation} initial={{y : 150, opacity : 0}}>contactez-nous pour plus d’informations sur les tatouages ou autre ! </motion.h2>
       </section>
       <section className='contact_form_content'>
       <section className='container_form'>

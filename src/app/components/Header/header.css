@@ -38,12 +38,6 @@ header {
     gap: 40px;
   }
   
-  nav a.active, #menu li a.active {
-    color: #698c54; 
-    font-weight: bold;
-    font-weight: 700;
-  }
-  
   .mobile-menu {
     display: none; 
   }
@@ -136,8 +130,20 @@ header {
     font-size: 24px; 
     text-decoration: none; 
   }
+
+  .arrow_up{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    padding: 5px;
+    background-color: #ffffff36;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     .desktop-nav{
         gap: 25px;
         height: 100%;

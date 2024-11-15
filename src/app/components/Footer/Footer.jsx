@@ -3,7 +3,10 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <a href="https://www.instagram.com/greenz_inktattoo/" target='blank'>
+      <img src='./instagram.svg' className='logo_reseau'></img></a>
+    </footer>
   )
 }
 

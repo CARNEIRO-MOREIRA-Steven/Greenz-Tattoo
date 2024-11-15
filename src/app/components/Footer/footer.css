@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.logo_reseau{
+    height: 50px;
+    width: 50px;
+}
