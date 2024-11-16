@@ -1,0 +1,77 @@
+.soins_page{
+    background-color: #000000;
+    height: 100vh;
+    margin-top: -20vh;
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.soins_description{
+    width: 60%;
+}
+
+.precaution_tattoo{
+    font-size: 40px;
+    padding: 25px 0;
+}
+
+.cicatrisation_tattoo{
+    padding: 25px 0 0 0;
+}
+
+.download_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.download_icon{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .soins_page{
+        height: auto;
+    }
+    .soins_description{
+        width: 85%;
+    }
+    .precaution_tattoo{
+        text-align: center;
+    }
+    .download_content{
+        padding: 0 0 25px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .soins_page{
+        height: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    .soins_description{
+        width: 85%;
+    }
+    .precaution_tattoo{
+        font-size: 27px;
+        text-align: center;
+    }
+    .list_precaution_tattoo{
+        width: 85%;
+    }
+    .cicatrisation_tattoo{
+        text-align: center;
+    }
+    .download_content{
+        text-align: center;
+        padding: 0 0 25px 0;
+    }
+}

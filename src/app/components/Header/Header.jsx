@@ -68,11 +68,11 @@ const Header = () => {
           <span></span>
           <ul id="menu" className={isMenuOpen ? 'open' : ''}>
             <li><Link href='/' className={activePath === '/' ? 'active' : ''}onClick={closeMenu}>Greenz Ink Tattoo</Link></li>
-            <li><Link href='#tatoueuse' className={activePath === '#tatoueuse' ? 'active' : ''}onClick={closeMenu}>Tatoueuse</Link></li>
+            <li><Link href='/#tatoueuse' className={activePath === '/#tatoueuse' ? 'active' : ''}onClick={closeMenu}>Tatoueuse</Link></li>
             <li><Link href='/soins' className={activePath === '/soins' ? 'active' : ''}onClick={closeMenu}>Soins Tatouage</Link></li>
             {/* <li><Link href='/projets' className={activePath === '/projets' ? 'active' : ''}onClick={closeMenu}>Projets</Link></li> */}
             {/* <li><Link href='/faq' className={activePath === '/faq' ? 'active' : ''}onClick={closeMenu}>FAQ</Link></li> */}
-            <li><Link href='#contact' className={activePath === '#contact' ? 'active' : ''}onClick={closeMenu}>Contact</Link></li>
+            <li><Link href='/#contact' className={activePath === '/#contact' ? 'active' : ''}onClick={closeMenu}>Contact</Link></li>
           </ul>
         </div>
       </div>
