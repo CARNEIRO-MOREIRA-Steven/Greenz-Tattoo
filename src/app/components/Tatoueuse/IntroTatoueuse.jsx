@@ -110,7 +110,7 @@ const IntroTatoueuse = () => {
   }, [TatoueuseVisible]); 
 
   return (
-      <section className='intro_tatoueuse' id="tatoueuse" ref={TatoueuseRef}>
+      <section defer className='intro_tatoueuse' id="tatoueuse" ref={TatoueuseRef}>
         <motion.section className='intro_tatoueuse_content_title'>
           <aside className='design_title'>
             <motion.span animate={spanTitle} initial={{y : -100}}></motion.span>
@@ -134,7 +134,7 @@ const IntroTatoueuse = () => {
             <motion.img 
             animate={photoProfil}
             initial={{scale : 0}}
-            className='photo_tatoueuse' src='./photo_profil.jpg' alt="Tatoueuse" />
+            className='photo_tatoueuse' src='./photo_profil.webp' alt="Tatoueuse" />
             <aside className='intro_aside'>
               <motion.p
               animate={firstTatoueuseDescription}
@@ -153,22 +153,22 @@ const IntroTatoueuse = () => {
           <section className='dernier_projet_image'>
             <motion.h2 animate={realisationsTitle} initial={{opacity : 0}} className='intro_realisation_title'>Dernières réalisations</motion.h2>
             <motion.aside animate={firstTattoo} initial={{y : -100, opacity :0, scale : 0.8}} className='section_last_tattoo'>
-              <img className='first_tattoo' src="./tattoo_eclair.png" alt="Tattoo 1" />
+              <img className='first_tattoo' src="./tattoo_eclair.webp" alt="Tattoo 1" />
               <aside className='aside_2_tatoo'>
-                <motion.img animate={secondTattoo} initial={{x :-50, opacity :0}} className='tattoo2' src="./tattoo2.png" alt="Tattoo 2" />
+                <motion.img animate={secondTattoo} initial={{x :-50, opacity :0}} className='tattoo2' src="./tattoo2.webp" alt="Tattoo 2" />
                 <div className='tattoo_overflow'>
-                <motion.img animate={thirdTattoo} initial={{opacity :0, y : -100}} className='tattoo3' src="./tattoo3.png" alt="Tattoo 3" /></div>
+                <motion.img animate={thirdTattoo} initial={{opacity :0, y : -100}} className='tattoo3' src="./tattoo3.webp" alt="Tattoo 3" /></div>
               </aside>
               <aside className='aside_2_tatoo'>
-                <motion.img animate={fourthTattoo} initial={{opacity :0, x : -100}} className='tattoo4' src="./tattoo5.png" alt="Tattoo 4" />
+                <motion.img animate={fourthTattoo} initial={{opacity :0, x : -100}} className='tattoo4' src="./tattoo5.webp" alt="Tattoo 4" />
                 <div className='tattoo_overflow'>
-                <motion.img animate={fifthTattoo} initial={{opacity :0, y : -100}} className='tattoo5' src="./tattoo4.png" alt="Tattoo 5" /></div>
+                <motion.img animate={fifthTattoo} initial={{opacity :0, y : -100}} className='tattoo5' src="./tattoo4.webp" alt="Tattoo 5" /></div>
               </aside>
             </motion.aside>
           </section>
         </section>
         <aside className='logo_bottom_container'>
-            <img className='intro_tatoueuse_logo' src='./logo.png'></img>
+            <img className='intro_tatoueuse_logo' alt='logo' src='./logo.png'></img>
           </aside>
     </section>
   );

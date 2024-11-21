@@ -5,7 +5,7 @@ import { motion, useAnimation } from 'framer-motion'
 
 const Banner = () => {
   const [bannerVisible, bannerIsVisible] = useState(true)
-  const titleBanner = useAnimation();
+  // const titleBanner = useAnimation();
   const subtitleBanner = useAnimation();
   const bannerRef = useRef(null);
 
@@ -30,30 +30,26 @@ const Banner = () => {
   useEffect(() => {
     const animateBanner = async () => {
       if (bannerVisible){
-        await titleBanner.start({
-          opacity : 1,
-          scale : 1,
-          y : 0,
-          transition : { duration : 0.7}
-        })
+        // await titleBanner.start({
+        //   opacity : 1,
+        //   scale : 1,
+        //   y : 0,
+        //   transition : { duration : 0.5}
+        // })
         await subtitleBanner.start({
           opacity : 1,
-          transition : { duration : 1, delay : 0.5}
+          transition : { duration : 0.4, delay : 0.2}
         })
       }
     }
     animateBanner();
-  }, [titleBanner]);
+  }, []);
   return (
     <section ref={bannerRef} className='banner'>
         <section className='banner_image'>
         </section>
-        <motion.h1
-        animate={titleBanner}
-        initial={{y : -50, opacity :0, scale : 0}}>Greenz Ink Tattoo</motion.h1>
-        <motion.h2
-        animate={subtitleBanner}
-        initial={{opacity : 0}}>Studio de tatouage privé</motion.h2>
+        <h1>Greenz Ink Tattoo</h1>
+        <h2>Studio de tatouage privé</h2>
     </section>
   )
 }

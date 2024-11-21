@@ -12,12 +12,12 @@ const Header = () => {
   };
 
   const closeMenu = () => {
-    setIsMenuOpen(false);  // Ferme le menu
+    setIsMenuOpen(false); 
   };
 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0, // Définit la position en haut de la page
+      top: 0,
     });}
 
   useEffect(() => {
@@ -59,10 +59,11 @@ const Header = () => {
       </nav>
       <div className="mobile-menu">
       <Link className='logo_link_header' href="/">
-        <img className="logo-header" src="./logo.png" alt="Logo"/>
+        <img className="logo-header" src="./logo_mobile.webp" alt="Logo"/>
         </Link>
         <div id="menuToggle">
-          <input type="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
+        <label htmlFor="menu"></label>
+          <input id='menu' name="menu" type="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
           <span></span>
           <span></span>
           <span></span>
@@ -76,7 +77,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <img className='arrow_up' src='arrow-up.svg' onClick={scrollToTop}></img>
+      <img className='arrow_up' src='arrow-up.svg' alt='flèche retour haut' onClick={scrollToTop}></img>
       </header>
   );
 };
