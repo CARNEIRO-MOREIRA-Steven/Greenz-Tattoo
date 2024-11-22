@@ -71,8 +71,8 @@
 }
 
 .photo_tatoueuse{
-    height: 80%;
-    width: 45%;
+    height: 100%;
+    width: 40%;
     object-fit: cover;
     filter: brightness(0.6);
     border: 2px solid;
@@ -228,7 +228,8 @@
         top: 15px;
     }
     .photo_tatoueuse{
-        width: 30%;
+        width: 100px;
+        height: 150px;
     }
     .intro_tatoueuse_description{
         font-size: 17px;
@@ -243,8 +244,5 @@
     .intro_tatoueuse_logo{
         width: 125px;
         height: 125px;
-    }
-    .photo_tatoueuse{
-        height: 100%;
     }
   }

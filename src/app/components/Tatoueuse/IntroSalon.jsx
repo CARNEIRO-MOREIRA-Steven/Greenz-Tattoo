@@ -102,7 +102,7 @@ const IntroSalon = () => {
   }, [SalonVisible]); 
 
   return (
-    <section className='intro_salon' ref={SalonRef}>
+    <section defer className='intro_salon' ref={SalonRef}>
     <section className='intro_salon_content_title'>
         <aside className='design_title'><span></span><h2 className='intro_salon_title'>GREENZ INK TATTOO, C’EST</h2><span></span></aside>
         <motion.h3 animate={firstSubtitleSalon} initial={{opacity : 0}} className='intro_salon_subtitle'>Un salon de tatouage unique</motion.h3>

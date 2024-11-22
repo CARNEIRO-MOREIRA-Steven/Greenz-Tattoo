@@ -55,6 +55,7 @@ const IntroTatoueuse = () => {
         });
         await photoProfil.start({
           scale : 1,
+          opacity : 1,
           transition: { delay: 0.2, duration : 0.4 }
 
         });
@@ -128,8 +129,9 @@ const IntroTatoueuse = () => {
         <section className='intro_tatoueuse_container'>
           <section className='intro_tatoueuse_content'>
             <motion.img 
+            loading='lazy'
             animate={photoProfil}
-            initial={{scale : 0}}
+            initial={{opacity : 0}}
             className='photo_tatoueuse' src='./photo_profil.webp' alt="Tatoueuse" />
             <aside className='intro_aside'>
               <motion.p
