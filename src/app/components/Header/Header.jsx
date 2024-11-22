@@ -51,7 +51,7 @@ const Header = () => {
         <Link href='/' className={activePath === '/' ? 'active' : ''}onClick={closeMenu}>Greenz Ink Tattoo</Link>
         <Link href='/#tatoueuse' className={activePath === '#tatoueuse' ? 'active' : ''}onClick={closeMenu}>Tatoueuse</Link>
         <Link href="/">
-        <img className="logo-header" src="./logo.png" alt="Logo"/>
+        <img className="logo-header" src="./intro_tatoueuse_logo.webp" alt="Logo"/>
         </Link>
         <Link href='/soins' className={activePath === '/soins' ? 'active' : ''}onClick={closeMenu}>Soins Tatouage</Link>
         {/* <Link href='/faq' className={activePath === '/faq' ? 'active' : ''}onClick={closeMenu}>FAQ</Link> */}

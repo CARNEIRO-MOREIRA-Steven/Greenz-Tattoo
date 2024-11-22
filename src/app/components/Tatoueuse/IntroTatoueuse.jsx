@@ -54,7 +54,7 @@ const IntroTatoueuse = () => {
           transition: { duration: 0.7 }
         });
         await photoProfil.start({
-          scale : 1.1,
+          scale : 1,
           transition: { delay: 0.2, duration : 0.4 }
 
         });
@@ -67,10 +67,6 @@ const IntroTatoueuse = () => {
           x : 0,
           opacity : 1,
           transition: { duration: 0.5}
-        });
-        
-        await photoProfil.start({
-          scale : 1
         });
         await realisationsTitle.start({
           opacity :1
@@ -168,7 +164,7 @@ const IntroTatoueuse = () => {
           </section>
         </section>
         <aside className='logo_bottom_container'>
-            <img className='intro_tatoueuse_logo' alt='logo' src='./logo.png'></img>
+            <img className='intro_tatoueuse_logo' alt='logo' src='./intro_tatoueuse_logo.webp'></img>
           </aside>
     </section>
   );

@@ -244,5 +244,7 @@
         width: 125px;
         height: 125px;
     }
-
+    .photo_tatoueuse{
+        height: 100%;
+    }
   }
